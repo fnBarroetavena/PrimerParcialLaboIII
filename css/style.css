@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#content{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    width: 50%;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* table ********************************/
+table{
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tbody tr:nth-child(even) {
+    background: gainsboro;
+}
+
+thead tr{
+    padding-left: 100px;
+    text-align: left;
+    background-color: teal;
+    color: white;
+    /* height: 2rem; */
+}
+
+th, td{
+    padding: 0.5rem;
+}
+
+table tbody tr{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+table tbody tr:hover{
+    border-bottom: 1px solid grey;
+    background-color:  rgb(128, 173, 173);
+    cursor: pointer;
+}
+/* ******************************* */
+
+/* modal ********************************/
+#modal{
+    width: 30%;
+    height: 400px;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+}
+
+#modalBlockScreen, #spinnerBlockScreen{
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.733);
+    position: fixed;
+    top: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+#btnCerrar{
+    margin-bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.redBtn{
+    background: red;
+    color: white;
+}
+
+.redBtn:hover{
+    background: rgb(201, 3, 3);
+}
+
+.greenBtn{
+    background: limegreen;
+    color: white;
+}
+
+.greenBtn:hover{
+    background: rgb(42, 170, 42);
+}
+
+#modal button{
+    border-style: none;
+    border-radius: 5px;
+}
+
+#modal button:focus{
+    outline: none;
+}
+
+#modal button:hover{
+    cursor: pointer;
+}
+
+input[type=text], select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#divSexo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+#divBtn{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#divBtn button{
+    width: 35%;
+    padding: 0.8rem 0;
+}
+
+.errorInput{
+    border:1px solid red;
+}
+
+.normalInput{
+    border:1px solid white;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    animation: rotar 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotar{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(0.75turn);}
+}
+/* ******************************* */

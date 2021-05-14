@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Cuatrimestre</th>
+        <th>Fecha de Final</th>
+        <th>Turno</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+
+  <div id="modalBlockScreen" class="hidden">
+    <div id="modal">
+      <button id="btnCerrar" class="redBtn">x</button>
+      <label for="txtNombre">Nombre</label>
+      <input type="text" name="txtNombre" id="txtNombre" class="normalInput">
+      <label for="selectCuatrimestre">Cuatrimestre</label>
+      <select name="select" id="selectCuatrimestre" disabled>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <label for="txtFechaFinal">Fecha De Final</label>
+      <input type="text" name="txtFechaFinal" id="txtFechaFinal" class="normalInput">
+      <div id="divTurno">
+        <label>Turno</label>
+        <div>
+          <input type="radio" name="rdTurno" id="rdbM" value="Mañana">
+          <label for="rdbM">Mañana</label>
+        </div>
+        <div>
+          <input type="radio" name="rdTurno" id="rdbN" value="Noche">
+          <label for="rdbN">Noche</label>
+        </div>
+      </div>
+      <div id="divBtn">
+        <button id="btnEliminar" class="redBtn">Eliminar</button>
+        <button id="btnModificar" class="greenBtn">Modificar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="spinnerBlockScreen" class="hidden">
+    <img src="img/spinner.png" alt="">
+  </div>
+</body>
+
+</html>
